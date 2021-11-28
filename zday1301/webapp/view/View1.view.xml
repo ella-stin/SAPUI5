@@ -1,0 +1,20 @@
+<mvc:View
+    controllerName="iitp.zday1301.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <Label labelFor="inputTeamName"  text="Team Name"></Label>
+                        <Input id="inputTeamName" description="Enter the Team Name." value="SAPUI5" ></Input>
+                        <Button text="Search" press="onClick"></Button> 
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
