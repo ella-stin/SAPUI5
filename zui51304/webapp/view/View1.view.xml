@@ -1,0 +1,49 @@
+<mvc:View
+    controllerName="iitp.zui51304.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <f:Form >
+                            <f:title><core:Title text="Form Title"></core:Title></f:title>
+                            <f:layout>
+                                <f:ResponsiveLayout ></f:ResponsiveLayout>
+                            </f:layout>
+                            <f:formContainers>
+                                <f:FormContainer>
+                                    <f:title><core:Title text="Container1 Title"></core:Title></f:title>
+                                    <f:formElements>
+                                        <f:FormElement >
+                                            <f:label><Label text="Name"></Label></f:label>
+                                            <f:fields>
+                                                <Input id="inpLastName" value="Park"></Input>
+                                                <Input id="inpFirstName" value="Nahye"></Input>
+                                            </f:fields>
+                                        </f:FormElement>
+                                        <f:FormElement >
+                                            <f:label><Label text="Hobby"></Label></f:label>
+                                            <f:fields>
+                                                <CheckBox text="Soccer" ></CheckBox>
+                                                <CheckBox text="Volleyball" ></CheckBox>
+                                            </f:fields>
+                                        </f:FormElement>
+                                    </f:formElements>
+                                </f:FormContainer>
+                            </f:formContainers>
+                        </f:Form>
+                        <Panel headerText="Image" expandable="true" expanded="false">
+                            <Image src="../img/volleyball.jpg" ></Image>
+                        </Panel>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
