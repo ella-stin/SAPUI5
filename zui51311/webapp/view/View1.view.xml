@@ -1,0 +1,51 @@
+<mvc:View
+    controllerName="iitp.zui51311.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content> 
+                        <Table items="{/aEmp}">
+                            <columns>
+                                <Column ><header><Text text="Employee Number"></Text></header></Column>
+                                <Column ><header><Text text="Last Name"></Text></header></Column>
+                                <Column ><header><Text text="First Name"></Text></header></Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem press="onPress" type="Active">
+                                    <cells>
+                                        <Text text="{eId}"></Text>
+                                        <Text text="{lastName}"></Text>
+                                        <Text text="{firstName}"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                        <Table id="idTableSkill" items="{/aSkill}">
+                            <columns>
+                                <Column ><header><Text text="Employee NO"></Text></header></Column>
+                                <Column ><header><Text text="Skill NO"></Text></header></Column>
+                                <Column ><header><Text text="Skill Name"></Text></header></Column>
+                            </columns>
+
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Text text="{eId}"></Text>
+                                        <Text text="{sId}"></Text>
+                                        <Text text="{sName}"></Text>
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
