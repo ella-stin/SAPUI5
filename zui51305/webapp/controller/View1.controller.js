@@ -15,5 +15,7 @@ sap.ui.define([
             onPress: function( ){
                 MesgManager.myMesg("Mesg Content", "Mesg Title");
             }
+                // MessageBox custom해서 내 라이브러리로 제작해서 사용
+                // 나만의 기능 만들어서 사용하고 싶을 때
 		});
 	});
