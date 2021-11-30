@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core"
+			 xmlns="sap.m"
+>
+    <Dialog title="Popup View" id="idPopup">
+        <Text text="TEST"></Text>
+        <Button text="Close" press="onClose"></Button>
+    </Dialog>
+</core:FragmentDefinition>

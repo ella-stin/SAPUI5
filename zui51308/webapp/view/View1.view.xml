@@ -1,0 +1,29 @@
+<mvc:View
+    controllerName="iitp.zui51308.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content> 
+                        <Input id="inpLastName"></Input>
+                        <Input id="inpFirstName"></Input>
+                        <Button text="Search" press="onSearch"></Button>
+                        <Button text="Open Popup" press="onPopup"></Button>
+                        
+                        <!-- Fragment View -->
+                        <!-- <core:Fragment fragmentName="iitp.zui51308.view.XmlFrag" type="XML"> </core:Fragment> -->
+                        <core:Fragment id="inpFrag" fragmentName="iitp.zui51308.view.XmlFrag" type="XML"> </core:Fragment>
+                        <core:Fragment id="inpFragJS" fragmentName="iitp.zui51308.view.XmlFrag" type="JS"> </core:Fragment>
+                        <!-- <core:Fragment id="" fragmentName="iitp.zui51308.view.Popup" type="XML"> </core:Fragment>  -->
+                        <!-- 기본 화면에서 계속 보이는 경우에만 뷰에서 fragment로 연결 -->
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
